@@ -85,7 +85,7 @@ header {
 }
 
 .boxTextContainer {
-  width: calc(100% - 120px);
+  width: calc(100% - 80px);
 }
 
 .textContainer .title {
@@ -101,7 +101,7 @@ header {
 }
 
 footer {
-  background-color: #091f0d;
+  background-color: #0c160e;
   color: white;
   padding: 20px;
   display: grid;
@@ -195,5 +195,38 @@ footer h2 {
   
   .imageContainer:nth-of-type(2) {
     order: 2;
+  }
+
+  .textContainer .title {
+    color: #277430;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+  }
+  
+  .textContainer .subtitle {
+    color: #1b4520;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+  }
+  
+  
+  footer {
+    background-color: #0c160e;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-column: unset;
+    grid-template-columns: unset;
+    margin-top: 100px;
+  }
+
+  .boxFooter2 {
+    display: block;
+    text-align: left;
+    order: 1
+  }
+
+  .boxFooter1 {
+    order: 2
   }
 }
