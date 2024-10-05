@@ -6,7 +6,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(to top, #ffffff, #cfffbc);
+  background: linear-gradient(to top, #ffffff, #d6fec6);
   margin: 0;
 }
 
@@ -71,9 +71,11 @@ header {
 }
 
 .imageContainer img {
-  width: calc(100% - 100px);
+  max-width: calc(100% - 100px);
+  max-height: 450px;
   border-radius: 25px;
   box-shadow: 0 0 30px 10px #00000046;
+  background-color: #deffd2;
 }
 
 .textContainer {
