@@ -6,7 +6,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(to top, #ffffff, #deffd0d8);
+  background: linear-gradient(to top, #ffffff, #d2f4c4d8);
   margin: 0;
 }
 
@@ -29,6 +29,77 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.headerLink {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.headerLink::after {
+  content: "";
+  border-radius: 3px;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: rgb(0, 134, 36);
+  bottom: -3px;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.headerLink:hover::after {
+  width: 100%;
+}
+
+.buttonMenu {
+  cursor: pointer;
+  display: none;
+  background-color: #00000000;
+  font-size: 26px;
+  border: none;
+  color: #000;
+}
+
+.menuHeader {
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(100%);
+  padding: 10px;
+  padding-bottom: 0px;
+  border-radius: 12px;
+  position: absolute;
+  right: 5px;
+  top: 80px;
+  background-color: #f0f0f0;
+  width: 180px;
+  height: auto;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.menuHeader.show {
+  pointer-events: all;
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.menuConteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuConteudo a {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #d0dfc6;
+  width: calc(100% - 20px);
+  text-decoration: none;
+  color: #000;
 }
 
 .boxHeader {
@@ -74,7 +145,12 @@ header {
   max-width: calc(100% - 100px);
   max-height: 450px;
   border-radius: 25px;
-  box-shadow: 0 0 30px 10px #00000046;
+  box-shadow: 0 0 30px #00000046;
+  transition: transform ease-out 0.25s;
+}
+
+.imageContainer img:hover {
+    transform: scale(1.025);
 }
 
 .textContainer {
@@ -98,6 +174,25 @@ header {
   color: #1b4520;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
+}
+
+.quebraCabeca {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
+
+.quebraCabeca img {
+    width: calc(100% - 60px);
+    max-width: 800px;
+    transition: transform ease-out 0.25s;
+}
+  
+.quebraCabeca img:hover {
+    transform: scale(1.025);
 }
 
 footer {
@@ -197,6 +292,10 @@ footer h2 {
     order: 2;
   }
 
+  .quebraCabeca {
+    order: 3;
+  }
+
   .textContainer .title {
     color: #277430;
     font-family: "Montserrat", sans-serif;
@@ -229,4 +328,13 @@ footer h2 {
   .boxFooter1 {
     order: 2
   }
+}
+
+@media (max-width: 800px) {
+    .buttonMenu {
+      display: block;
+    }
+    .links {
+        display: none;
+    }
 }

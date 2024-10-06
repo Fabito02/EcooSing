@@ -14,9 +14,19 @@
           <img src="logo.svg" alt="Logo do site" class="logo" />
         </div>
         <div class="boxHeader links">
-            <span href="*" class="headerLink">Sobre Nós</span>
-            <span href="*" class="headerLink">Invista na Ecoo</span>
-            <span href="*" class="headerLink">Seja nosso cliente</span>
+            <a href="*" class="headerLink">Sobre Nós</a>
+            <a href="*" class="headerLink">Invista na Ecoo</a>
+            <a href="*" class="headerLink">Seja nosso cliente</a>
+        </div>
+        <button id="buttonMenu" class="buttonMenu" onclick="dropdown()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="menuHeader" class="menuHeader">
+            <div class="menuConteudo">
+                <a href="../sobre/">Sobre Nós</a>
+                <a href="../investir/">Invista na Ecoo</a>
+                <a href="../mapa-interativo/">Seja nosso cliente</a>
+            </div>
         </div>
       </header>
       <div class="textContainer boxLeft">
@@ -50,6 +60,9 @@
             </p>
         </div>
       </div>
+      <div class="quebraCabeca">
+        <img src="img/pagina inicial/img3.1.svg" alt="">
+      </div>
     </main>
     <footer>
         <div class="boxFooter1">
@@ -68,6 +81,7 @@
             <h2>Informações de Contato</h2>
             <p>Estamos sempre à disposição para esclarecer dúvidas e discutir novas oportunidades de parceria. Entre em contato conosco para saber mais sobre nossos serviços, produtos e oportunidades de investimento.</p>
         </div>
-      </footer>      
+      </footer>   
   </body>
+  <script src="source/global.js"></script>
 </html>
