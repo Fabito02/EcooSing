@@ -7,7 +7,15 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  background: linear-gradient(to bottom, #e0f5e9, white 400px) no-repeat;
+  height: 100vh;
 }
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
 
 ::selection {
   background-color: #83ef90;
@@ -18,10 +26,11 @@ main {
   grid-template: auto auto auto auto;
   column-gap: 40px;
   row-gap: 80px;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Definindo quatro colunas de tamanho fixo */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 header {
+  width: 100%;
   grid-column-start: 1;
   grid-column-end: 5;
   height: 80px;
