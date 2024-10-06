@@ -59,7 +59,7 @@ header {
   background-color: #00000000;
   font-size: 26px;
   border: none;
-  color: #0a4115;
+  color: #000000;
 }
 
 .menuHeader {
@@ -77,6 +77,7 @@ header {
   width: 180px;
   height: auto;
   transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  box-shadow: 0 0 15px #00000045;
 }
 
 .menuHeader.show {
@@ -96,7 +97,7 @@ header {
   margin-bottom: 10px;
   border-radius: 8px;
   padding: 10px;
-  background-color: #d0dfc6;
+  background-color: #e1e1e1;
   width: calc(100% - 20px);
   text-decoration: none;
   color: #000;
