@@ -6,8 +6,8 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to top, #ffffff, #d2f4c4d8);
   margin: 0;
-  height: 100vw;
 }
 
 ::selection {
@@ -54,6 +54,7 @@ header {
 }
 
 .buttonMenu {
+  margin-right: 20px;
   cursor: pointer;
   display: none;
   background-color: #00000000;
@@ -63,11 +64,10 @@ header {
 }
 
 .menuHeader {
-  margin-right: 20px;
   z-index: 2;
   pointer-events: none;
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateY(10px);
   padding: 10px;
   padding-bottom: 0px;
   border-radius: 12px;
@@ -83,7 +83,7 @@ header {
 .menuHeader.show {
   pointer-events: all;
   opacity: 1;
-  transform: translateX(0px);
+  transform: translateY(0px);
 }
 
 .menuConteudo {
