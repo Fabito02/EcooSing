@@ -7,7 +7,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  background: linear-gradient(to bottom, #e0f5e3, white 600px) no-repeat;
+  background: linear-gradient(to bottom, #e0f5e9, white 600px) no-repeat;
   height: 100vh;
 }
 
@@ -121,6 +121,7 @@ header {
 
 .boxHeader .logo {
   height: 100%;
+  cursor: pointer;
 }
 
 .boxHeader.links {
@@ -198,13 +199,44 @@ header {
 
 .quebraCabeca img {
     width: calc(100% - 60px);
-    max-width: 800px;
+    max-width: 700px;
     transition: transform ease-out 0.25s;
 }
   
 .quebraCabeca img:hover {
     transform: scale(1.025);
 }
+
+.valores {
+  text-align: justify;
+  grid-column: 1 / 5;
+  background-color: #ececec;
+  padding: 20px 0;
+}
+
+.valores ul {
+  text-align: justify;
+  font-size: 1rem;
+  list-style-type: none;
+  padding: 0;
+  width: calc(100% - 80px);
+  max-width: 800px;
+}
+
+.valores ul b {
+  color: #1b4520;
+  font-weight: bold; 
+}
+
+.valores ul li {
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.valores ul li:hover {
+  color: #1b4520;
+}
+
 
 footer {
   background-color: #080808;
