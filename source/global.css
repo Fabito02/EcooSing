@@ -7,7 +7,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  background: linear-gradient(to bottom, #e0f5e9, white 400px) no-repeat;
+  background: linear-gradient(to bottom, #e0f5e3, white 600px) no-repeat;
   height: 100vh;
 }
 
@@ -37,6 +37,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .headerLink {
@@ -206,7 +207,7 @@ header {
 }
 
 footer {
-  background-color: #0c160e;
+  background-color: #080808;
   color: white;
   padding: 20px;
   display: grid;
