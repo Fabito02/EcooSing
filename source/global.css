@@ -6,8 +6,8 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(to top, #ffffff, #d2f4c4d8);
   margin: 0;
+  height: 100vw;
 }
 
 ::selection {
@@ -59,10 +59,11 @@ header {
   background-color: #00000000;
   font-size: 26px;
   border: none;
-  color: #000;
+  color: #0a4115;
 }
 
 .menuHeader {
+  margin-right: 20px;
   z-index: 2;
   pointer-events: none;
   opacity: 0;
