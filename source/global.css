@@ -316,8 +316,8 @@ footer h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: calc(100vw - 40px);
-  max-width: 700px;
+  width: 700px;
+  max-width: 80vw;
   background-color: #e3e3e35b;
   box-shadow: 3px 4px 20px #00000032;
   height: auto;
@@ -359,9 +359,6 @@ footer h2 {
 }
 
 @media (max-width: 1000px) {
-  .containerBlocosLivres {
-    max-width: 400px;
-  }
 
   main {
     display: flex;
@@ -421,9 +418,6 @@ footer h2 {
 }
 
 @media (max-width: 800px) {
-  .containerBlocosLivres {
-    max-width: 280px;
-  }
   .buttonMenu {
     display: block;
   }
