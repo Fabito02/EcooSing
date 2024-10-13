@@ -1,0 +1,99 @@
+.clientes, .perguntasFrequentes {
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientesSucesso, .perguntas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.perguntas {
+    flex-direction: column;
+}
+
+.clienteSucesso, .pergunta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    background-color: #e3e3e35b;
+    box-shadow: 3px 4px 20px #00000032;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform ease-out 0.25s;
+}
+
+.pergunta {
+    padding-left: 85px;
+    max-width: 70vw;
+    width: 800px;
+}
+  
+.clienteSucesso:hover, .pergunta:hover {
+    transform: scale(1.025);
+}
+
+.imgClienteEmpresa {
+    width: calc(100% - 40px);
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.topo {
+    width: 100%;
+    display: flex;
+    align-items: self-end;
+    margin-bottom: 3ch;
+}
+
+.imgCliente {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nomeCliente {
+    margin-left: 30px;
+    font-size: 21px;
+}
+
+.explicacao.pergunta {
+    width: 100%;
+}
+
+.duvida {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.numero {
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #44a569, #29d183);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    left: 20px;
+}

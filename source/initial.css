@@ -1,0 +1,25 @@
+@media (max-width: 1000px) {
+    .textContainer {
+      order: 1;
+    }
+  
+    .imageContainer {
+      order: 1;
+    }
+  
+    .textContainer:nth-of-type(2) {
+      order: 2;
+    }
+  
+    .imageContainer:nth-of-type(2) {
+      order: 2;
+    }
+  
+    .valores {
+      order: 3;
+    }
+  
+    .servicosProdutos {
+      order: 4;
+    }
+  }

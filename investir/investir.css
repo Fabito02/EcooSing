@@ -1,0 +1,15 @@
+b {
+  color: #1b4c27;
+}
+
+.porqueInvestir {
+  grid-column: 1/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+@media (max-width: 1000px) {
+  }
