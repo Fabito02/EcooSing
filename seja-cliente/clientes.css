@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: space-between;
     width: 500px;
-    max-width: 80vw;
+    max-width: 75vw;
     background-color: #e3e3e35b;
     box-shadow: 3px 4px 20px #00000032;
     height: auto;
@@ -38,6 +38,7 @@
 .pergunta {
     min-height: 165px;
     padding-left: 85px;
+    width: 700px;
     max-width: calc(80vw - 85px);
 }
   
@@ -55,12 +56,12 @@
     width: 100%;
     display: flex;
     align-items: self-end;
-    margin-bottom: 3ch;
+    margin-bottom: 20px;
 }
 
 .imgCliente {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
     border-radius: 50%;
 }
